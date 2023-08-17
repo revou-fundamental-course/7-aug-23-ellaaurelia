@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Matematik Segitiga</h1>
+      <p>Hitung Luas dan Keliling Segitiga dengan Mudah dan Cepat!</p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="switchButton">
+          <button class="btn" id="luasButton">Luas Segitiga</button>
+          <button class="btn" id="kelilingButton">Keliling Segitiga</button>
+        </div>
+        <div id="luasContent" class="content">
+          <h2>Luas Segitiga</h2>
+          <div class="center">
+            <img
+              src="./assets/Segitiga.jpg"
+              alt="Gambar Segitiga"
+              width="181px"
+              height="119px"
+            />
+          </div>
+          <p>
+            <b>Rumus Luas Segitiga :</b><br />
+            <span>L = 1/2 * a * t</span><br />
+            Keterangan :<br />
+            L = Luas Segitiga<br />
+            a = Alas Segitiga<br />
+            t = Tinggi Segitiga
+          </p>
+          <h3>Hitung Luas Segitiga</h3>
+          <input type="number" id="alasSegitiga" placeholder="Nilai Alas" />
+          <input type="number" id="tinggiSegitiga" placeholder="Nilai Tinggi" />
+          <div class="center">
+            <button class="btn" id="hitungLuas">Hitung</button>
+          </div>
+          <p id="rumusLuas"></p>
+          <p id="hasilLuas"></p>
+          <button class="btn" id="resetLuas">Reset</button>
+        </div>
+        <div id="kelilingContent" class="content">
+          <h2>Keliling Segitiga</h2>
+          <div class="center">
+            <img
+              src="./assets/Segitiga.jpg"
+              alt="Gambar Segitiga"
+              width="181px"
+              height="119px"
+            />
+          </div>
+          <p>
+            <b>Rumus Keliling Segitiga :</b><br />
+            <span>K = S1 + S2 + S3</span><br />
+            Keterangan :<br />
+            K = Keliling Segitiga<br />
+            S1 = Sisi Pertama<br />
+            S2 = Sisi Kedua<br />
+            S3 = Sisi Ketiga
+          </p>
+          <h3>Hitung Keliling Segitiga</h3>
+          <input type="number" id="sisi1" placeholder="Nilai Sisi Pertama" />
+          <input type="number" id="sisi2" placeholder="Nilai Sisi Kedua" />
+          <input type="number" id="sisi3" placeholder="Nilai Sisi Ketiga" />
+          <div class="center">
+            <button class="btn" id="hitungKeliling">Hitung</button>
+          </div>
+          <p id="rumusKeliling"></p>
+          <p id="hasilKeliling"></p>
+          <button class="btn" id="resetKeliling">Reset</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©2023 Kalkulator Matematik Segitiga | Created by ellaaurelia</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
